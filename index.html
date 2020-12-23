@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!--указываем тип текущего документа--> 
+<html lang="en"> <!--язык документа - английский--> 
+<head>
+  <meta charset="utf-8">  <!--указываем кодировку документа--> 
+  <link rel="stylesheet" href="/public/styles/styles.css">
+  <title>SEA BATTLE</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div class="Table">
+    <script src="/public/client.js"></script>
+    <table id="playerTable">
+      <caption>YOU</caption>
+      <thead>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <table id="enemyTable">
+      <caption>YOUR ENEMY</caption>
+      <thead>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+    <form name="click" method="get" >
+      <input type="submit" value="Расставить корабли">
+    </form> 
+    <form name="Page" method="post" >
+      <input type="submit" value="ВСЕ ИГРЫ">
+    </form>  
+</body>
+</html>

@@ -1,0 +1,52 @@
+.Table {
+  display: flex; /*блочный контейнер*/
+  align-items: center;/*выравнивание*/
+  justify-content: space-around;/* Равномерно распределяет все элементы по ширине flex-блока.Все элементы имеют полуразмерное пространство с обоих концов */
+}
+/*фон*/
+body {
+  padding-top: 6rem;
+  background: #7e6c8d;
+}
+/*заголовки табличек*/
+table caption {
+  font-size: 2em;
+  font-family: "Times New Roman";
+}
+/*кто ходит*/
+table caption.who_now {
+  color: rgb(58, 245, 33);
+}
+/*таблица*/
+td, th {
+  width: 40px;
+  height: 40px;
+  background: #b726db;
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+}
+/*пустые клеточки*/
+td.empty {
+  background: #91ccf3;
+}
+/*наведение курсора на клеточку*/
+#enemyTable td.empty:hover {
+  background:#10f123;
+}
+/*корабли*/
+td.ship1,td.ship2,td.ship3,td.ship4 {
+  background:#191b9b;
+}
+/*мимо*/
+td.miss {
+  background:#D6D6D6;
+}
+/*ранен*/
+td.wounded {
+  background: rgb(243, 186, 30);
+}
+/*убит*/
+td.destroyed {
+  background: #e90d0d;
+}
